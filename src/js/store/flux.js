@@ -13,10 +13,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 					initial: "white"
 				}
 			],
-			characters:"",
-			planets:"",
-			starships:"",
-			favorites:""
+			characters:[],
+			planets:[],
+			starships:[],
+			favorites:[]
 		},
 		actions: {
 		getCharacter:()=>{
@@ -85,18 +85,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			})
 			.catch(error => console.error(error));
 		},
-		addFavorites: (newFavorite) => {
-			const store = getStore();
-			const favorite = store.favorites.concat(newFavorite);
-			setStore({ favorites: favorite });
-		},
-		removeFavorites: (index) => {
-			const store = getStore();
-			const favorite = store.favorites.filter((c, i) => {
-				return index !== i
-			});
-			setStore({ favorites: favorite });
-		},
+		
 		
 		
 		
