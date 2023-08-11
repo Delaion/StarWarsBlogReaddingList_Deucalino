@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Context } from "../store/appContext";
 
-export const starships = (props) => {
+export const Starships = (props) => {
     const { store } = useContext(Context);
     const [imageError, setImageError] = useState(false);
 

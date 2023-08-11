@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Context } from "../store/appContext";
 
-export const characters = (props) => {
+export const Characters = (props) => {
     const { store } = useContext(Context);
     const [imageError, setImageError] = useState(false);
 
