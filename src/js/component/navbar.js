@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState, useContext } from "react";
+import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
-import "../../styles/navbar.css";
 
 export const Navbar = () => {
 	return (
@@ -12,7 +12,8 @@ export const Navbar = () => {
 			</Link>
 			<div className="ml-auto">
 				<Link to="/demo">
-				<button type="button" className="btn btn-outline-warning text-dark w-85 h-50">       My Favorities </button>
+				<button type="button" className="btn btn-outline-warning text-dark w-85 h-50">       My Favorities
+				 </button>
 				</Link>
 			</div>
 		</nav>
